@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+		<link rel="stylesheet" type="text/css" href="clent.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+		<script type="text/javascript" src="client.js"></script>
+	</head>
+	<body>
+		<h1><b>Log Analyzer</b></h1>
+		<hr>
+		<br>
+		<div>
+			<form id="typeSelect">
+				<table id="typeSelectTable">
+					<tbody id="typeSelectTableBody">
+						<tr>
+							<td>
+								<h2>Select Log Type</h2>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b>Apache Acceas Log:</b>
+								<br>
+								<input type="radio" name="logType" id="apacheAccessLog" value="apacheAccessLog">
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b>Apache Error Log:</b>
+								<br>
+								<input type="radio" name="logType" id="apacheErrorLog" value="apacheErrorLog">
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b>MySQL Slow Query Log:</b>
+								<br>
+								<input type="radio" name="logType" id="MySQLSlowQueryLog" value="MySQLSlowQueryLog">
+								<br>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b>MySQL Error Log:</b>
+								<br>
+								<input type="radio" name="logType" id="MySQLErrorLog" value="MySQLErrorLog">
+								<br>
+							</td>
+						</tr>
+						<tr>
+							
+						</tr>
+					</tbody>
+				</table>
+				<h2>Upload Log</h2>
+				<input type="file" name="logUploader" id="logUploader"><br>
+				<center>
+					<button type="button" name="analyzeButton" id="analyzeButton">Analyze File</button>
+				</center>
+			</form>
+		</div>
+	</body>
+</html>
